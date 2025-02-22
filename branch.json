@@ -62,5 +62,9 @@
 	{
 		"name": "Core.xml",
 		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/Core.xml"
+	},
+	{
+		"name": "rewrite.json",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/rewrite.json"
 	}
 ]
