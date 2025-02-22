@@ -36,8 +36,8 @@
 		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Plugins.php"
 	},
 	{
-		"name": "/sys/class/Requests.php",
-		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Requests.php"
+		"name": "/sys/class/Request.php",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Request.php"
 	},
 	{
 		"name": "/sys/class/Security.php",
