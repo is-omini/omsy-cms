@@ -1,70 +1,82 @@
 [
-	{
-		"name": "/sys/class/CMS.php",
-		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/CMS.php"
-	},
-	{
-		"name": "/sys/class/Accounts.php",
-		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Accounts.php"
-	},
-	{
-		"name": "/sys/class/DataBase.php",
-		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/DataBase.php"
-	},
-	{
-		"name": "/sys/class/Log.php",
-		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Log.php"
-	},
-	{
-		"name": "/sys/class/Members.php",
-		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Members.php"
-	},
-	{
-		"name": "/sys/class/PDO_htmlspecialchars.php",
-		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/PDO_htmlspecialchars.php"
-	},
-	{
-		"name": "/sys/class/PLUGDate.php",
-		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/PLUGDate.php"
-	},
-	{
-		"name": "/sys/class/Plugins.php",
-		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Plugins.php"
-	},
-	{
-		"name": "/sys/class/Request.php",
-		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Request.php"
-	},
-	{
-		"name": "/sys/class/Security.php",
-		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Security.php"
-	},
-	{
-		"name": "/sys/class/Session.php",
-		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Session.php"
-	},
-	{
-		"name": "/sys/class/Snapshot.php",
-		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Snapshot.php"
-	},
-	{
-		"name": "/sys/class/Template.php",
-		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Template.php"
-	},
-	{
-		"name": "/sys/class/Upload.php",
-		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Upload.php"
-	},
-	{
-		"name": "/sys/function/GFunction.php",
-		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/function/GFunction.php"
-	},
-	{
-		"name": "Core.xml",
-		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/Core.xml"
-	},
-	{
-		"name": "rewrite.json",
-		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/rewrite.json"
-	}
+    {
+        "name": "\/sys\/module\/Upload.php",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/sys\/module\/Upload.php"
+    },
+    {
+        "name": "\/sys\/module\/Snapshot.php",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/sys\/module\/Snapshot.php"
+    },
+    {
+        "name": "\/sys\/module\/PLUGDate.php",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/sys\/module\/PLUGDate.php"
+    },
+    {
+        "name": "\/sys\/module\/Members.php",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/sys\/module\/Members.php"
+    },
+    {
+        "name": "\/sys\/module\/Accounts.php",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/sys\/module\/Accounts.php"
+    },
+    {
+        "name": "\/sys\/function\/GFunction.php",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/sys\/function\/GFunction.php"
+    },
+    {
+        "name": "\/sys\/class\/Template.php",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/sys\/class\/Template.php"
+    },
+    {
+        "name": "\/sys\/class\/Session.php",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/sys\/class\/Session.php"
+    },
+    {
+        "name": "\/sys\/class\/Security.php",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/sys\/class\/Security.php"
+    },
+    {
+        "name": "\/sys\/class\/Request.php",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/sys\/class\/Request.php"
+    },
+    {
+        "name": "\/sys\/class\/Plugins.php",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/sys\/class\/Plugins.php"
+    },
+    {
+        "name": "\/sys\/class\/PDO_htmlspecialchars.php",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/sys\/class\/PDO_htmlspecialchars.php"
+    },
+    {
+        "name": "\/sys\/class\/ModuleOmsy.php",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/sys\/class\/ModuleOmsy.php"
+    },
+    {
+        "name": "\/sys\/class\/Log.php",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/sys\/class\/Log.php"
+    },
+    {
+        "name": "\/sys\/class\/FunctionOmsy.php",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/sys\/class\/FunctionOmsy.php"
+    },
+    {
+        "name": "\/sys\/class\/DataBase.php",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/sys\/class\/DataBase.php"
+    },
+    {
+        "name": "\/sys\/class\/ClassOmsy.php",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/sys\/class\/ClassOmsy.php"
+    },
+    {
+        "name": "\/sys\/class\/CMS.php",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/sys\/class\/CMS.php"
+    },
+    {
+        "name": "\/rewrite.json",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/rewrite.json"
+    },
+    {
+        "name": "\/Core.xml",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/Core.xml"
+    }
 ]

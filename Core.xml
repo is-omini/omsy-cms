@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <database>
-        <host></host>
-        <username></username>
+        <host>127.0.0.1</host>
+        <username>root</username>
         <password/>
-        <dbname></dbname>
+        <dbname>omsy_cms</dbname>
     </database>
     <template>
         <title></title>

@@ -10,6 +10,7 @@ class Request implements ArrayAccess {
         foreach ($GetArray as $key => $value) {
             $key = htmlentities($key);
 
+            if(empty($value)) continue;
             //if(in_array($key, $whiteKey)) continue;
             //if(strlen($key) > 255) unset()
 

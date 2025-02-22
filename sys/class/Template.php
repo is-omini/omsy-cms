@@ -55,7 +55,7 @@ class Template {
             }
         }
         $CMS->setPage(end($Path));
-        CMS->DataBase->execute('INSERT INTO system_viewpage(useragent, userip, page, date_time) VALUES(?,?,?,now())', [$_SERVER['HTTP_USER_AGENT'], CMS->Function->getIp(), $_SERVER['REQUEST_URI']]);
+        CMS->DataBase->execute('INSERT INTO system_viewpage(useragent, userip, page, date_time) VALUES(?,?,?,now())', [$_SERVER['HTTP_USER_AGENT'], CMS->GFunction->getIp(), $_SERVER['REQUEST_URI']]);
         switch ($Path[0]) {
             case "panel":
                     if ($CMS->Session->GetRole() === 3 || $CMS->Session->GetRole() === 2){

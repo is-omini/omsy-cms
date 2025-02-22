@@ -1,37 +1,14 @@
 <?php
 class CMS {
     private $Class;
+    private $Module;
+    private $Function;
+
     public $Tilte;
     public $querySearch='';
     public $Page;
     public $Args;
     function __construct() {
-        /*
-        $zipFile = 'update.zip';
-        $filename = 'checksum.txt';
-        $zip = new ZipArchive;
-        if ($zip->open($zipFile) === TRUE) {
-            if ($zip->locateName($filename) !== FALSE) {
-                $entry = $zip->getStream($filename);
-                $content = stream_get_contents($entry);
-                fclose($entry);
-                
-                $jsonchecksum = json_decode($content, true);
-                foreach ($jsonchecksum as $value) {
-                    if ($value["checksum"] !== md5_file($value["path"]) && $value["path"] !== "index.php"){
-                        echo $value["path"]." = ".$value["checksum"]."</br></br>";
-                        //var_dump("./".$value["path"]);
-                        $zip->extractTo("./", $value["path"]);
-                    }
-                }
-            
-            }
-            // Fermer le fichier ZIP
-            $zip->close();
-        } else {
-            echo 'Impossible d\'ouvrir le fichier ZIP.';
-        }
-        */
         $Config = simplexml_load_file('./Core.xml');
         if ($Config === false) {
             die('Erreur de chargement du fichier XML.');
@@ -60,45 +37,44 @@ class CMS {
         ];
         $this->Class["Config"] = $Config;
 
-        include("./sys/class/Security.php");
-        $this->Class["Security"] = new Security($this);
-        include("./sys/class/Session.php");
-        $this->Class["Session"] = new Session($this);
-        include("./sys/class/Log.php");
-        $this->Class["Log"] = new Log($this);
+        include("./sys/class/FunctionOmsy.php");
+        $this->Class["FunctionOmsy"] = new FunctionOmsy($this);
         
-        include("./sys/class/DataBase.php");
-        $this->Class["DataBase"] = new DataBase($this);
+        include("./sys/class/ClassOmsy.php");
+        $this->Class["ClassOmsy"] = new ClassOmsy($this);
 
-        include("./sys/function/GFunction.php");
-        $this->Class["Function"] = new GFunction($this);
-        
-        include("./sys/class/Members.php");
-        $this->Class["Members"] = new Members($this);
-        include("./sys/class/Accounts.php");
-        $this->Class["Accounts"] = new Accounts($this);
-
-        include("./sys/class/Plugins.php");
-        $this->Class["Plugins"] = new Plugins($this);
-        
-        
-        include("./sys/class/Upload.php");
-        $this->Class["Upload"] = new Upload($this);
-
-        include("./sys/class/Snapshot.php");
-        $this->Class["Snapshot"] = new Snapshot($this);
-                
-        include("./sys/class/Template.php");
-        $this->Class["Template"] = new Template($this);
-
-        include("./sys/class/PLUGDate.php");
-        $this->Class["PLUGDate"] = new PLUGDate($this);
+        include("./sys/class/ModuleOmsy.php");
+        $this->Class["ModuleOmsy"] = new ModuleOmsy($this);
 
         $this->Class["Session"]->loadSession();
     }
 
     public function __get($name) {
-        return isset($this->Class[$name])?$this->Class[$name]:NULL;
+        $r = NULL;
+        if(isset($this->Class[$name])) $r = $this->Class[$name];
+        if(isset($this->Function[$name])) $r = $this->Function[$name];
+        return $r;
+    }
+
+    public function addClass($className) {
+        if(class_exists($className)) return;
+
+        include_once ("./sys/class/$className.php");
+        $this->Class[$className] = new $className($this);
+    }
+
+    public function addFunction($functionName) {
+        if(function_exists($functionName)) return;
+
+        include_once ("./sys/function/$functionName.php");
+        $this->Function[$functionName] = new $functionName($this);
+    }
+
+    public function addModule($moduleName) {
+        if(class_exists($moduleName)) return;
+
+        include_once ("./sys/module/$moduleName.php");
+        $this->Class[$moduleName] = new $moduleName($this);
     }
 
     public function setPage($page){
