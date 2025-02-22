@@ -85,9 +85,6 @@ class CMS {
         include("./sys/class/Upload.php");
         $this->Class["Upload"] = new Upload($this);
 
-        include("./sys/class/Mail.php");
-        $this->Class["Mail"] = new Mail($this);
-
         include("./sys/class/Snapshot.php");
         $this->Class["Snapshot"] = new Snapshot($this);
                 
