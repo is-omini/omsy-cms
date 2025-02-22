@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <database>
+        <host></host>
+        <username></username>
+        <password/>
+        <dbname></dbname>
+    </database>
+    <template>
+        <title></title>
+        <folder></folder>
+        <plugins></plugins>
+    </template>
+    <security>
+        <eval>false</eval>
+        <exec>false</exec>
+        <system>false</system>
+        <passthru>false</passthru>
+    </security>
+    <server>
+        <privatekey></privatekey>
+        <update>https://static.floagg.com/publish-dev/</update>
+    </server>
+</configuration>
