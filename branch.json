@@ -60,6 +60,10 @@
 		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Upload.php"
 	},
 	{
+		"name": "/sys/function/GFunction.php",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/function/GFunction.php"
+	},
+	{
 		"name": "Core.xml",
 		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/Core.xml"
 	}
