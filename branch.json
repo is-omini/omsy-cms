@@ -16,10 +16,6 @@
 		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Log.php"
 	},
 	{
-		"name": "/sys/class/Mail.php",
-		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Mail.php"
-	},
-	{
 		"name": "/sys/class/Members.php",
 		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Members.php"
 	},
