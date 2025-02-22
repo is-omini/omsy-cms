@@ -1,5 +1,65 @@
 [
 	{
+		"name": "/sys/class/CMS.php",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/CMS.php"
+	},
+	{
+		"name": "/sys/class/Accounts.php",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Accounts.php"
+	},
+	{
+		"name": "/sys/class/DataBase.php",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/DataBase.php"
+	},
+	{
+		"name": "/sys/class/Log.php",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Log.php"
+	},
+	{
+		"name": "/sys/class/Mail.php",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Mail.php"
+	},
+	{
+		"name": "/sys/class/Members.php",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Members.php"
+	},
+	{
+		"name": "/sys/class/PDO_htmlspecialchars.php",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/PDO_htmlspecialchars.php"
+	},
+	{
+		"name": "/sys/class/PLUGDate.php",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/PLUGDate.php"
+	},
+	{
+		"name": "/sys/class/Plugins.php",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Plugins.php"
+	},
+	{
+		"name": "/sys/class/Requests.php",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Requests.php"
+	},
+	{
+		"name": "/sys/class/Security.php",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Security.php"
+	},
+	{
+		"name": "/sys/class/Session.php",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Session.php"
+	},
+	{
+		"name": "/sys/class/Snapshot.php",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Snapshot.php"
+	},
+	{
+		"name": "/sys/class/Template.php",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Template.php"
+	},
+	{
+		"name": "/sys/class/Upload.php",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/sys/class/Upload.php"
+	},
+	{
 		"name": "Core.xml",
 		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/Core.xml"
 	},
