@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <database>
-        <host></host>
-        <username></username>
+        <host>127.0.0.1</host>
+        <username>root</username>
         <password/>
-        <dbname></dbname>
+        <dbname>baco-magazine</dbname>
     </database>
     <template>
-        <title></title>
-        <folder></folder>
-        <plugins></plugins>
+        <title>Eiga No Neko - Straming d'animes en VO et VOST</title>
+        <meta>
+            <description>Eiga No Neko, catalogue de streaming d'animées et series. Et aussi de scans</description>
+            <tags>streaming, séries, films, communauté, plateformes de streaming, films en ligne, communauté de streaming</tags>
+        </meta>
+
+        <folder>floagg</folder>
+        <plugins/>
+        <_POST>sfgdrgf, sfgsrfg, dfgdfg</_POST>
+        <_GET>sfgsg, sfr, efe</_GET>
     </template>
     <security>
         <eval>false</eval>
@@ -19,6 +26,6 @@
     </security>
     <server>
         <privatekey></privatekey>
-        <update>https://static.floagg.com/publish-dev/</update>
+        <update>C:\laragon\www\eiga-no-neko---vid-o-service-interface/publish-dev/</update>
     </server>
 </configuration>

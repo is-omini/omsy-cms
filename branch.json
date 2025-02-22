@@ -1,0 +1,10 @@
+[
+	{
+		"name": "Core.xml",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/Core.xml"
+	},
+	{
+		"name": ".htaccess",
+		"path": "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main/.htaccess"
+	}
+]
