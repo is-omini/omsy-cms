@@ -28,13 +28,13 @@ class Session {
         $this->CMS->DataBase->execute("DELETE FROM omsy_session WHERE last_activity < NOW() - INTERVAL ? SECOND", [300]);
     }
 
-    public function loadSession() {
+    public function afterCMSLoad() {
         $getId = explode('/', $_SERVER['REQUEST_URI']);
         if(!in_array($getId[1], ['panel', 'api'])) $this->insertSession();
 
         if(isset($_SESSION['string_token'])) {
             $otk = htmlentities($_SESSION['string_token']);
-            $us = $this->CMS->DataBase->execute('SELECT * FROM account_login WHERE token = ?', [$otk])->fetchAll();
+            $us = $this->CMS->DataBase->execute('SELECT * FROM account_login WHERE token = ?', [$otk])->fetchAll() ?? [];
             if(count($us) > 0) {
                 $reqUser = $this->CMS->DataBase->execute(
                     'SELECT * FROM account WHERE uniqid = ?',

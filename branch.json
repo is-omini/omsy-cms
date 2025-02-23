@@ -1,5 +1,9 @@
 [
     {
+        "name": "\/usr\/template\/default\/Permission.json",
+        "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/usr\/template\/default\/Permission.json"
+    },
+    {
         "name": "\/sys\/module\/Upload.php",
         "path": "https:\/\/raw.githubusercontent.com\/is-omini\/omsy-cms\/refs\/heads\/main\/sys\/module\/Upload.php"
     },

@@ -6,7 +6,6 @@ class Plugins {
         $this->CMS = $CMS;
         $plugins = explode(',', $CMS->Config->template->plugins);
 
-        $name = "ennNode";
         foreach ($plugins as $key => $value) {
             if(empty($value)) continue;
             

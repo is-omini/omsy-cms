@@ -4,6 +4,8 @@ class CMS {
     private $Module;
     private $Function;
 
+    public $Title, $metaDescription, $metaTags;
+
     public $Tilte;
     public $querySearch='';
     public $Page;
@@ -35,32 +37,27 @@ class CMS {
                 "Templates" => "./panel/templates/"
             ]
         ];
+
         $this->Class["Config"] = $Config;
 
-        include("./sys/class/FunctionOmsy.php");
-        $this->Class["FunctionOmsy"] = new FunctionOmsy($this);
+        $for = ['FunctionOmsy', 'Security', 'Session', 'Log', 'DataBase', 'Plugins', 'Template', 'ModuleOmsy'];
+        foreach ($for as $key => $value) {
+            include("./sys/class/$value.php");
+            $this->Class["$value"] = new $value($this);
+        }
         
-        include("./sys/class/ClassOmsy.php");
-        $this->Class["ClassOmsy"] = new ClassOmsy($this);
-
-        include("./sys/class/ModuleOmsy.php");
-        $this->Class["ModuleOmsy"] = new ModuleOmsy($this);
-
-        $this->Class["Session"]->loadSession();
+        foreach ($this->Class as $key => $value) {
+            if($value !== NULL) continue;
+            if(class_exists($key)) continue;
+            if(function_exists($this->Class[$key]->afterCMSLoad())) $this->Class[$key]->afterCMSLoad();
+        }
     }
 
     public function __get($name) {
         $r = NULL;
         if(isset($this->Class[$name])) $r = $this->Class[$name];
-        if(isset($this->Function[$name])) $r = $this->Function[$name];
+        else if(isset($this->Function[$name])) $r = $this->Function[$name];
         return $r;
-    }
-
-    public function addClass($className) {
-        if(class_exists($className)) return;
-
-        include_once ("./sys/class/$className.php");
-        $this->Class[$className] = new $className($this);
     }
 
     public function addFunction($functionName) {

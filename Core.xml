@@ -8,8 +8,8 @@
     </database>
     <template>
         <title></title>
-        <folder></folder>
-        <plugins></plugins>
+        <folder>default</folder>
+        <plugins>Defaults</plugins>
     </template>
     <security>
         <eval>false</eval>

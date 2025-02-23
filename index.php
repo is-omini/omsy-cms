@@ -1,6 +1,4 @@
 <?php
-define("__root__", dirname(__FILE__)."/");
-/*
 ini_set("session.cookie_httponly", True);
 ini_set('memory_limit', '256M');
 
@@ -8,35 +6,35 @@ session_start();
 date_default_timezone_set('Europe/Paris');
 define("__root__", dirname(__FILE__)."/");
 
-
-//$_SESSION['Role'] = 3;
 include "./sys/class/CMS.php";
 new CMS();
+/*
+function addFiles($folder) {
+	$skip = ['.', '..', '.git', '.gitattributes', '.htaccess', 'index.php', 'LICENSE'];
 
-*/
-$buffFiles = [];
-function addFiles($add) {
-	$buffF = [];
+	$files = scandir(__root__ . $folder);
+	$buff = [];
+	foreach ($files as $value) {
+		if(in_array($value, $skip)) continue;
 
-	$allDownload = scandir(__root__.$add);
-	foreach ($allDownload as $value) {
-		if(in_array($value, ['.', '..', 'LICENSE', '.git', '.gitattributes', 'branch.json', '.htaccess', 'index.php'])) continue;
+		$path = $folder . '/' . $value;
 
-		if(is_dir(__root__.$add.'/'.$value)) {
-			$buffF = array_merge($buffF, addFiles($add.'/'.$value));
+		if(is_dir(__root__ . $path)) {
+			$buff = array_merge($buff, addFiles($path));
 			continue;
 		}
-		$buffF[] = [
-			'name' => $add.'/'.$value,
-			'path' => "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main".$add.'/'.$value
+
+		$buff[] = [
+			 "name" => $path,
+        	"path" => "https://raw.githubusercontent.com/is-omini/omsy-cms/refs/heads/main".$path
 		];
 	}
 
-	return $buffF;
+	return $buff;
 }
-
-$buffFiles = array_merge($buffFiles, addFiles(''));
+$buff = addFiles('');
 
 header('Content-Type: text/plain');
-$buff = array_reverse($buffFiles);
-file_put_contents('branch.json', json_encode($buff, JSON_PRETTY_PRINT));
+
+$buff = array_reverse($buff);
+var_dump($buff);*/

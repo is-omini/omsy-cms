@@ -1,0 +1,11 @@
+{
+	"thumbnail": "https://wallpapercave.com/wp/wp3153703.jpg",
+	"name": "Default Website",
+	"author": "julie@floagg.com",
+	"install": {
+		"rewrite": [
+			{"path":"omsy_welcome", "rewrite":"/index"}
+		],
+		"plugin": []
+	}
+}
